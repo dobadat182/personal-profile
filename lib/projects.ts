@@ -14,7 +14,6 @@ export const PROJECTS: Project[] = [
       "Bongiorno Group is a financial services website for doctors, dentists, and high‑income professionals in Australia, highlighting services in financial planning, tax & accounting, insurance, and lending",
     tags: ["Wordpress", "PHP", "JQuery"],
     href: "https://bongiorno.com.au/",
-    featured: true,
   },
   {
     name: "Boss Hunting",
@@ -59,7 +58,6 @@ export const PROJECTS: Project[] = [
       "Reveel Group is a digital marketing agency specializing in creating tailored digital solutions for businesses, including websites, mobile apps, and e-commerce platforms",
     tags: ["Wordpress", "PHP", "JQuery"],
     href: "https://reveelgroup.com/",
-    featured: true,
   },
   {
     name: "Safety Path",
@@ -67,5 +65,6 @@ export const PROJECTS: Project[] = [
       "An e-commerce store for sustainable safety lighting products like photoluminescent exit signs, warning signs, line markings, and LED solutions for workplaces, powered by Smarterlite Technology (battery-free, eco-friendly lighting",
     tags: ["Wordpress", "PHP", "JQuery"],
     href: "https://shop.smarterlite.com/",
+    featured: true,
   },
 ];
