@@ -27,7 +27,7 @@ function HeroPortrait() {
         aria-hidden
         className="absolute -inset-2 rounded-full bg-[#dbf4a7]/45 blur-2xl"
       />
-      <div className="relative h-28 w-[5.5rem] overflow-hidden rounded-full border-[3px] border-white bg-[#dbf4a7] shadow-[0_24px_64px_rgba(10,22,41,0.16)] min-[480px]:h-36 min-[480px]:w-28 sm:h-44 sm:w-32">
+      <div className="relative h-28 w-22 overflow-hidden rounded-full border-[3px] border-white bg-[#dbf4a7] shadow-[0_24px_64px_rgba(10,22,41,0.16)] min-[480px]:h-36 min-[480px]:w-28 sm:h-44 sm:w-32">
         <Image
           src="/me.jpg"
           alt="Dat Do"
@@ -51,7 +51,7 @@ function HeroPortrait() {
 
 const Hero = () => {
   return (
-    <Section className="relative flex min-h-[100dvh] w-full flex-col items-center justify-center overflow-x-clip px-1 pb-16 pt-6 sm:min-h-screen sm:px-0 sm:pb-20 sm:pt-0 md:pb-24">
+    <Section className="relative flex min-h-dvh w-full flex-col items-center justify-center overflow-x-clip px-1 pb-16 pt-6 sm:min-h-screen sm:px-0 sm:pb-20 sm:pt-0 md:pb-24">
       <div className="absolute inset-0 -z-10 bg-white">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-size-[4rem_4rem] mask-[linear-gradient(to_bottom,black_50%,transparent_100%)] sm:bg-size-[6rem_4rem]" />
         <div
@@ -64,7 +64,7 @@ const Hero = () => {
         />
         <div
           aria-hidden
-          className="absolute inset-0 opacity-[0.22] mix-blend-multiply [background-image:radial-gradient(circle_at_1px_1px,rgba(10,22,41,0.14)_1px,transparent_0)] [background-size:3px_3px]"
+          className="absolute inset-0 opacity-[0.22] mix-blend-multiply [bg-image:radial-gradient(circle_at_1px_1px,rgba(10,22,41,0.14)_1px,transparent_0)] [bg-size:3px_3px]"
         />
       </div>
 

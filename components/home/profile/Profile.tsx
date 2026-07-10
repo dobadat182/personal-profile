@@ -14,7 +14,7 @@ import { Intro } from "./Intro";
 
 export default function Profile() {
   return (
-    <Section className="-mt-8 pt-0 sm:-mt-12 md:-mt-16 lg:-mt-20">
+    <Section className="pt-0 sm:-mt-12 md:-mt-16 lg:-mt-20">
       <Container>
         <Intro />
         <BentoGrid>
