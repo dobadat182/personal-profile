@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import Header from "@/components/layouts/Header";
 import Footer from "@/components/layouts/Footer";
+import ScrollProgress from "@/components/layouts/ScrollProgress";
 
 const satoshi = localFont({
   src: "../fonts/Satoshi-Variable.ttf",
@@ -40,6 +41,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <ScrollProgress />
       </body>
     </html>
   );
