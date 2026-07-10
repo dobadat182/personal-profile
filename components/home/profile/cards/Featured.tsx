@@ -106,7 +106,7 @@ export function Featured() {
   if (!FEATURED.length) return null;
 
   return (
-    <BentoItem className="relative col-span-1 flex min-h-[300px] flex-col overflow-hidden border-slate-200 bg-slate-100/50 min-[480px]:col-span-2 min-[480px]:min-h-[340px] lg:col-span-2 lg:row-span-2 lg:min-h-0 dark:border-slate-700 dark:bg-slate-900/60">
+    <BentoItem className="relative col-span-2 flex min-h-[300px] flex-col overflow-hidden border-slate-200 bg-slate-100/50 min-[480px]:min-h-[340px] lg:col-span-2 lg:row-span-2 lg:min-h-0 dark:border-slate-700 dark:bg-slate-900/60">
       <Carousel
         className="h-full"
         plugins={[

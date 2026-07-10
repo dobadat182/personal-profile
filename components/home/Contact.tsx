@@ -25,7 +25,7 @@ import {
 
 const Contact = () => {
   return (
-    <Section>
+    <Section id="contact">
       <Container className="grid items-start gap-8 sm:gap-10 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] lg:gap-12">
         <div className="space-y-3 sm:space-y-4 md:space-y-5">
           <p className={typography.eyebrow}>Contact</p>

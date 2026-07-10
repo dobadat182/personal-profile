@@ -37,7 +37,7 @@ export function Toolkit({
   ),
 }: ToolkitProps) {
   return (
-    <BentoItem className="col-span-1 flex flex-col gap-3 bg-white p-3 min-[480px]:col-span-2 min-[480px]:gap-4 min-[480px]:p-4 lg:col-span-2 dark:bg-slate-800/50">
+    <BentoItem className="col-span-2 flex flex-col gap-3 bg-white p-3 min-[480px]:gap-4 min-[480px]:p-4 lg:col-span-2 dark:bg-slate-800/50">
       <div className="flex h-full flex-col justify-center gap-3 min-[480px]:gap-4">
         <p className={cn(typography.cardLead, "flex flex-wrap items-end justify-center gap-2 text-center min-[480px]:justify-start min-[480px]:text-left")}>
           {children}

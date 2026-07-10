@@ -24,7 +24,7 @@ type AboutProps = {
 
 export function About({ children }: AboutProps) {
   return (
-    <BentoItem className="col-span-1 flex min-h-[280px] flex-col justify-between gap-4 bg-white p-3 min-[480px]:col-span-2 min-[480px]:p-4 lg:col-span-1 lg:row-span-2 lg:min-h-0 dark:bg-slate-800/50">
+    <BentoItem className="col-span-2 flex min-h-[280px] flex-col justify-between gap-4 bg-white p-3 min-[480px]:p-4 lg:col-span-1 lg:row-span-2 lg:min-h-0 dark:bg-slate-800/50">
       {children ?? (
         <>
           <div className="relative flex flex-col gap-4">

@@ -49,7 +49,7 @@ function SectionHeading({
       ) : null}
 
       {description ? (
-        <p className={cn("relative mt-4 md:mt-5", typography.bodyLg)}>
+        <p className={cn("relative mt-2 md:mt-3", typography.bodyLg)}>
           {description}
         </p>
       ) : null}

@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import Header from "@/components/layouts/Header";
+import Footer from "@/components/layouts/Footer";
 
 const satoshi = localFont({
   src: "../fonts/Satoshi-Variable.ttf",
@@ -28,9 +30,17 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cn("antialiased", satoshi.variable, cabinet.variable)}
+      className={cn(
+        "scroll-smooth antialiased",
+        satoshi.variable,
+        cabinet.variable,
+      )}
     >
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+      <body id="top" className="flex min-h-full flex-col font-sans">
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

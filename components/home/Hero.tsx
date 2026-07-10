@@ -51,7 +51,10 @@ function HeroPortrait() {
 
 const Hero = () => {
   return (
-    <Section className="relative flex min-h-dvh w-full flex-col items-center justify-center overflow-x-clip px-1 pb-16 pt-6 sm:min-h-screen sm:px-0 sm:pb-20 sm:pt-0 md:pb-24">
+    <Section
+      id="hero"
+      className="relative flex min-h-dvh w-full flex-col items-center justify-center overflow-x-clip px-1 pt-20 pb-16 sm:min-h-screen sm:px-0 sm:pt-16 sm:pb-20 md:pb-24"
+    >
       <div className="absolute inset-0 -z-10 bg-white">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-size-[4rem_4rem] mask-[linear-gradient(to_bottom,black_50%,transparent_100%)] sm:bg-size-[6rem_4rem]" />
         <div

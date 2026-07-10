@@ -31,7 +31,7 @@ const Projects = () => {
   };
 
   return (
-    <Section>
+    <Section id="work">
       <Container
         className="space-y-8 sm:space-y-10"
         eyebrow="Work"
