@@ -18,6 +18,7 @@ import {
   IconMail,
   IconMapPin,
   IconClockHour4,
+  IconBrandLinkedin,
 } from "@tabler/icons-react";
 import Link from "next/link";
 
@@ -32,6 +33,13 @@ const DETAILS = [
     icon: IconMapPin,
     label: "Based in",
     value: "Vietnam · Remote worldwide",
+  },
+  {
+    icon: IconBrandLinkedin,
+    label: "LinkedIn",
+    value: "linkedin.com/in/badat182",
+    href: "https://www.linkedin.com/in/badat182",
+    target: "_blank",
   },
   {
     icon: IconClockHour4,
@@ -86,6 +94,8 @@ const Contact = () => {
             <ul className="space-y-4">
               {DETAILS.map(({ icon: Icon, label, value, ...rest }) => {
                 const href = "href" in rest ? rest.href : undefined;
+                const target = "target" in rest ? rest.target : undefined;
+
                 const content = (
                   <>
                     <span className="flex size-10 shrink-0 items-center justify-center rounded-2xl border border-slate-200 bg-white text-[#0a1629]">
@@ -95,6 +105,7 @@ const Contact = () => {
                       <span className={cn(typography.label, "block")}>
                         {label}
                       </span>
+
                       <span className="mt-0.5 block text-sm font-medium text-[#0a1629]">
                         {value}
                       </span>
@@ -108,6 +119,7 @@ const Contact = () => {
                       <Link
                         href={href}
                         className="flex items-center gap-3 rounded-2xl transition-colors hover:opacity-80"
+                        target={target}
                       >
                         {content}
                       </Link>
@@ -150,7 +162,7 @@ const Contact = () => {
                         id="name"
                         name="name"
                         type="text"
-                        placeholder="Alex Nguyen"
+                        placeholder="Dat Do"
                         className={fieldClass}
                         required
                       />
@@ -167,7 +179,7 @@ const Contact = () => {
                         id="email"
                         name="email"
                         type="email"
-                        placeholder="you@company.com"
+                        placeholder="yourname@email.com"
                         className={fieldClass}
                         required
                       />
